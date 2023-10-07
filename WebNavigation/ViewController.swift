@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func openURLButtonPressed(_ sender: UIButton) {
+        
+        if let url = URL(string: "https://developer.apple.com/documentation/sirieventsuggestionsmarkup/url/") {
+            UIApplication.shared.open(url)
+        }
+        
+    }
+    
 }
 
