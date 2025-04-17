@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vah-JZ-Jbn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,75 +9,92 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--URL-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EXq-Rp-Ftq">
-                                <rect key="frame" x="125.00000000000001" y="345" width="143.33333333333337" height="162"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-zS-dht">
-                                        <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-XV-GsO">
-                                        <rect key="frame" x="0.0" y="28.333333333333314" width="143.33333333333334" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-xC-ko1">
-                                        <rect key="frame" x="0.0" y="56.666666666666693" width="143.33333333333334" height="20.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRF-6h-ZaB">
-                                        <rect key="frame" x="0.0" y="85" width="143.33333333333334" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is expensive?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zY-40-IaR">
-                                        <rect key="frame" x="0.0" y="113.33333333333331" width="143.33333333333334" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is expensive value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xn-aX-uc0">
-                                        <rect key="frame" x="0.0" y="141.66666666666669" width="143.33333333333334" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-XS-2lj">
+                                <rect key="frame" x="145.66666666666666" y="408.66666666666669" width="102" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open URL"/>
+                                <connections>
+                                    <action selector="openURLButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gtq-cZ-N77"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EXq-Rp-Ftq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bw0-hX-aSp"/>
-                            <constraint firstItem="EXq-Rp-Ftq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oKg-No-fky"/>
+                            <constraint firstItem="Rak-XS-2lj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3xg-Ze-0Mq"/>
+                            <constraint firstItem="Rak-XS-2lj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54v-Ya-oaT"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="connectionIsExpensiveValue" destination="1Xn-aX-uc0" id="sf6-AZ-dEk"/>
-                        <outlet property="connectionStatusValue" destination="cdc-XV-GsO" id="3Mb-jh-ffH"/>
-                        <outlet property="connectionTypeValue" destination="tRF-6h-ZaB" id="NQX-zU-YOX"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="URL" image="link" catalog="system" id="rao-7S-KmQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1898" y="4"/>
+        </scene>
+        <!--WKWebView-->
+        <scene sceneID="eQz-Bu-uxc">
+            <objects>
+                <viewController id="TPp-Nf-DJS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cF5-ft-Qhg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hvM-v2-jFl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="WKWebView" image="globe" catalog="system" id="81j-Iu-F4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJZ-2T-sDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="-418"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4GP-v0-9ey">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vah-JZ-Jbn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jcJ-gX-340">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ddf-Ue-5W7"/>
+                        <segue destination="TPp-Nf-DJS" kind="relationship" relationship="viewControllers" id="WYu-kb-XG2"/>
+                        <segue destination="G1u-HB-Q2p" kind="relationship" relationship="viewControllers" id="1ZU-pi-Haf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdD-tu-XRT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-8.3969465648854964" y="3.5211267605633805"/>
+        </scene>
+        <!--Safari-->
+        <scene sceneID="R66-7T-Wc2">
+            <objects>
+                <viewController id="G1u-HB-Q2p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcD-al-tti">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aTt-aW-pgA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Safari" image="safari" catalog="system" id="31m-CL-Mpc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7MS-cO-IAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="465"/>
         </scene>
     </scenes>
     <resources>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="link" catalog="system" width="128" height="124"/>
+        <image name="safari" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

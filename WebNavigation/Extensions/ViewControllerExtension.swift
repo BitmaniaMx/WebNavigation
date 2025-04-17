@@ -23,10 +23,16 @@ extension UIViewController {
         return NetworkMonitor.shared.isExpensive
     }
     
-    //Suscribes to network change notification
-    func observeConnectionChanges(selector : Selector) {
-        NotificationCenter.default.addObserver(self, selector: selector, name: .networkStatusChanged , object: nil)
+    //Suscribes to network change notification    
+    func observeConnectionChanges() {
+        NotificationCenter.default.addObserver(forName: .networkStatusChanged, object: nil, queue: .main, using: { _ in
+            print("-------- Connection changed --------")
+            print("isConnected: \(self.isConnected)")
+            print("isExpensive: \(self.isExpensive)")
+            print("connectionType: \(self.connectionType)")
+        } )
     }
+    
     
     func removeNetworkObserver() {
         NotificationCenter.default.removeObserver(self, name: .networkStatusChanged, object: nil)
